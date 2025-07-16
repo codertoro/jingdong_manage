@@ -49,14 +49,14 @@
 defineOptions({
   name: 'OrderDetail'
 })
-import {ref, onMounted, watch, onActivated, onUpdated} from 'vue'
+import {ref,  watch} from 'vue'
 import { useRoute,useRouter } from 'vue-router'
-import { useTabStore } from '@/stores/tabStore'
+// import { useTabStore } from '@/stores/tabStore'
 import axios from '@/axios/axios'
 import type { Order, OrderDetail } from '@/type/order'
 import type { Address } from '@/type/address.ts'
 
-const tabStore = useTabStore()
+// const tabStore = useTabStore()
 const route = useRoute()
 const router = useRouter()
 const order = ref<Order | null>(null)
