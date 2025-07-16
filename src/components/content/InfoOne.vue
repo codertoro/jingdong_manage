@@ -27,7 +27,7 @@ Info.vue<template>
 </template>
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
-import Page from "@/components/test/Page.vue";
+
 
 interface User {
   date: string
